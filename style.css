@@ -1,0 +1,245 @@
+* {
+    /*border: 2px solid red;*/
+    box-sizing: border-box;
+    margin:0;
+}
+
+
+#side-bar{
+    grid-area: side-bar;
+}
+#header{
+    grid-area: header;
+}
+#main-container{
+    grid-area: main-container;
+}
+
+
+
+#grid-container {
+    display: grid;
+    width: min(100%, 11000px);
+    /*grid-template-columns: repeat(6, clamp(200px, 20%, 200px));*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-areas: 
+    "side-bar header header header header header"
+    "side-bar header header header header header"
+    "side-bar main-container main-container main-container main-container main-container"
+    "side-bar main-container main-container main-container main-container main-container"
+    "side-bar main-container main-container main-container main-container main-container"
+    "side-bar main-container main-container main-container main-container main-container"
+    "side-bar main-container main-container main-container main-container main-container"
+    "side-bar main-container main-container main-container main-container main-container"
+    "side-bar main-container main-container main-container main-container main-container"
+    "side-bar main-container main-container main-container main-container main-container"
+}
+.image{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/************************************************/
+#dash{grid-area: dash;}
+#home{grid-area: home;}
+#profile{grid-area: profile;}
+#messages{grid-area: messages;}
+#history{grid-area: history;}
+#tasks{grid-area: tasks;}
+#communities{grid-area: comm;}
+#settings{grid-area: settings;}
+#support{grid-area: support;}
+#privacy{grid-area: privacy;}
+#space{grid-area: space;}
+#space1{grid-area: space1;}
+#side-bar{
+    background-color: #fbbf24;
+    display: grid;
+    overflow:auto;
+    /*width: 100%;*/
+    width: min(100%, 11000px);
+    float: left;
+    gap: 20px;
+    padding-top: 30px;
+    grid-template-columns: 200px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-areas: 
+    "dash"
+    "space1"
+    "home"
+    "profile"
+    "messages"
+    "history"
+    "tasks"
+    "comm"
+    "space"
+    "settings"
+    "support"
+    "privacy"
+    
+}
+.dash-header{
+    font-size: larger;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div > span{
+    font-size:medium;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3 > span{
+    font-weight: lighter;
+    font-size: medium;
+}
+.container > span{
+
+    
+}
+.project1{grid-area: project1; }
+.project2{grid-area: project2; }
+.project3{grid-area: project3; }
+.project4{grid-area: project4; }
+.project5{grid-area: project5; }
+.project6{grid-area: project6; }
+.container{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+#main-container{
+    position: relative;
+    display: grid;
+    width: min(100%, 11000px);
+    gap: 40px;
+    padding-top: 30px;
+    padding-left: 40px;
+    grid-template-columns: 25vw 25vw;
+    z-index: 0;
+    position: relative;
+    /*grid-template-rows: 40vh 40vh 35vh;*/
+    grid-template-areas: 
+    "project1 project2"
+    "project3 project4"
+    "project5 project6"
+
+}
+span{
+    display: flex;
+    align-items: center;
+}
+.dashboard{
+    display: inline-flex;
+    
+    flex-wrap: nowrap;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 100%;
+    flex-wrap: nowrap;
+    box-shadow: 0 4px 8px 0 rgba(14, 13, 13, 0.2), 0 6px 20px 0 rgba(17, 15, 15, 0.2);
+}
+#top-header{
+    padding-left: 20px; 
+    display: flex; 
+    align-items: center;
+}
+#bottom-header{
+    padding-left: 20px; 
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+}
+#top-header div{
+    display: flex;
+
+}
+#top-header input{
+    padding-left: 20px;
+    width: min(100%, 300px);
+    height: 40px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+#top-header img {
+    width: 90px;
+    height: 50px;
+}
+#bottom-header img {
+    width: 90px;
+    height: 50px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    
+}
+.name{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    align-items: center;
+}
+.bottom-name{
+    display: flex;
+    align-items: center;
+}
+.container{  
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(211, 118, 118, 0.2), 0 6px 20px 0 rgba(121, 80, 80, 0.2);
+    /*border: 2px solid red;*/
+}
+.container > p{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.container > h3{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.container:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.2), 0 6px 20px 0 rgba(12, 11, 11, 0.2);
+}
+.buttons{
+    margin-left: auto;
+    display: flex;
+    gap: 10px
+}
+button{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    width: 80px;
+    font-size: 1.1em;
+    color: white;
+    background-color: rgb(15, 15, 15);
+}
+/*Make media Queries to make the left side bar responsive*/
+
+
+@media screen and (max-width: 900px) {
+    #main-container{
+        display: grid;
+        width: 500px;
+        grid-template-columns: 2fr 2fr;
+
+    
+    }
+  }
