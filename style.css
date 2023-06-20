@@ -21,7 +21,7 @@
     display: grid;
     width: min(100%, 11000px);
     /*grid-template-columns: repeat(6, clamp(200px, 20%, 200px));*/
-    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
     grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
     grid-template-areas: 
     "side-bar header header header header header"
@@ -92,10 +92,6 @@ div > span{
 h3 > span{
     font-weight: lighter;
     font-size: medium;
-}
-.container > span{
-
-    
 }
 .project1{grid-area: project1; }
 .project2{grid-area: project2; }
@@ -197,7 +193,7 @@ span{
     display: flex;
     border: 1px solid black;
     flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(211, 118, 118, 0.2), 0 6px 20px 0 rgba(121, 80, 80, 0.2);
+    box-shadow:  0.5em 0 0 #eeb241, 0.2em 0.2em 0.2em rgba(0,0,0,0.3);
     /*border: 2px solid red;*/
 }
 .container > p{
